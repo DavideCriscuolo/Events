@@ -1,0 +1,9 @@
+:root {
+  --bg-color-header: #a51680;
+}
+body {
+  header {
+    height: 280px;
+    background-color: var(--bg-color-header);
+  }
+}
