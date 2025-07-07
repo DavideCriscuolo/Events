@@ -2,6 +2,7 @@
   --bg-color-header: #a51680;
 }
 body {
+  background-color: #a51680;
   header {
     height: 280px;
     background-color: var(--bg-color-header);
@@ -27,5 +28,17 @@ body {
       background-repeat: no-repeat;
       background-position: 50%;
     }
+  }
+  .carousel-custom {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .carousel-custom .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
