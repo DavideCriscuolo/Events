@@ -45,4 +45,11 @@ body {
       }
     }
   }
+  .form-control {
+    border-color: #a51680;
+  }
+  .form-control:focus {
+    border-color: #a51680;
+    box-shadow: 0 0 0 0.25rem #a5167f8a;
+  }
 }
