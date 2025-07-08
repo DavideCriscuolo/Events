@@ -1,10 +1,12 @@
 :root {
-  --bg-color-header: #a51680;
+  --bg-color-purple: #a51680;
+  --bg-color-beaige: #fcebd38f;
 }
+
 body {
   header {
     height: 280px;
-    background-color: var(--bg-color-header);
+    background-color: var(--bg-color-purple);
     background-image: url(./../img/pathHeader.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -18,7 +20,6 @@ body {
   .about {
     height: 100%;
     .desc_about {
-      background-color: aquamarine;
     }
     .img_bg {
       height: 100px;
@@ -45,11 +46,42 @@ body {
       }
     }
   }
+  .gallery {
+    min-height: 767px;
+  }
+  .service {
+    background-color: var(--bg-color-beaige);
+    min-height: 750px;
+  }
+
+  .formContact {
+    background-color: var(--bg-color-beaige);
+    min-height: 1079px;
+  }
   .form-control {
-    border-color: #a51680;
+    border-color: var(--bg-color-purple);
   }
   .form-control:focus {
-    border-color: #a51680;
+    border-color: var(--bg-color-purple);
     box-shadow: 0 0 0 0.25rem #a5167f8a;
+  }
+  .form-label {
+    font-size: 13px;
+    text-wrap: nowrap;
+  }
+
+  .btn {
+    background-color: var(--bg-color-purple);
+    font-size: 15px;
+    color: white;
+  }
+  .btn:hover {
+    border: 1px solid var(--bg-color-purple);
+    color: var(--bg-color-header);
+  }
+  footer {
+    min-height: 360px;
+    width: 100%;
+    background-color: var(--bg-color-purple);
   }
 }
