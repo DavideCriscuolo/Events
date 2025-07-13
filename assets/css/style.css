@@ -11,7 +11,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .container-fluid {
+  .jumbo {
     height: 802px;
     background-image: url("./../img/Rectangle\ 6.png");
     background-size: cover;
@@ -51,12 +51,12 @@ body {
   }
   .service {
     background-color: var(--bg-color-beaige);
-    min-height: 750px;
+    min-height: 600px;
   }
 
   .formContact {
     background-color: var(--bg-color-beaige);
-    min-height: 1079px;
+    min-height: 900px;
   }
   .form-control {
     border-color: var(--bg-color-purple);
@@ -79,9 +79,33 @@ body {
     border: 1px solid var(--bg-color-purple);
     color: var(--bg-color-header);
   }
-  footer {
-    min-height: 360px;
+
+  .footer-container {
+    position: relative;
+  }
+
+  .flower-border {
+    position: absolute;
+    top: -70px; /* fa "uscire" i fiori sopra */
+    left: 0;
     width: 100%;
-    background-color: var(--bg-color-purple);
+    height: 100px; /* dipende dall’immagine */
+    background-image: url("./../img/Group.svg"); /* immagine trasparente */
+    background-repeat: repeat-x;
+    background-size: contain;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .conten_footer {
+    min-height: 150px;
+    background-color: #a5167f;
+    background-size: cover;
+    background-position: 80% 50%;
+    padding-top: 40px; /* spazio per non coprire i fiori */
+    position: relative;
+    z-index: 1;
+  }
+  .container_lg_ft {
   }
 }
